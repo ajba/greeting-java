@@ -1,0 +1,1 @@
+web: java -jar target/dependency/jetty-runner.jar --port $PORT target/webapp-runner.jar.war

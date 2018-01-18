@@ -1,0 +1,15 @@
+language: java
+jdk:
+- oraclejdk8
+- openjdk7
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: 1mB8sMfzKnGbAO0VnhDgocDYRuPE1T0tZ6kNoc7dZrlmVF/ku8lMP6wTTjUP1AALpQVgt/byQrGm0AavQoj3ch2G3NtWQaFKVfguvUuHicOfPJZRVwFQmQIbY6jQBzaORxWJfzzSjZngakar1B4hsEULmsX6UoLqr606/iw5aXaS/0G9rK8+KtNsUGgYd3YE3YzPVCr65CZA9rE3TDFnCIrAwduOig4NOCUYBxvjcZe9ObXT0pYx7yPT/r5RLw8yD2XO14yCfS1eSfdhgCdMP79y8ULMstWOPx/8q3brsDTn3wuL/+QuzRf8IKDyvCqZnF5dCQQwaLiWvxGVfD+l/PquJg3AB8S7OAD/G8HLcXgL8gGL3JWctx+9dBvx4LpyEn53TXGqGgGE5ArlxYub2MCk5889rZBq8TWcMGUX1Zg01Ztw0hdVKRt/lkktH1Enpd4QV/objZmTnFqbNfYSdIUgjoEZZb/DBhxkvW61elOGTNDGL2Q5H5CA4T99ESx8Vkt4Zy9j3iL67PYPinGrHNokkQM1C55aVkSVHlchqmxic9h/vgc27I2RWjdQB75idMsfDz8z4PlmS/sRrwMjxg6nbv+qcyoyDX99k4au5geXPcELdi3UVk1D6dOOgtW+9WMD67AxscBoGldT/sZrF364OyYEeBmF+20ZJFPU/cI=
+  app: examen-egc
+  on:
+    repo: ajba/greeting-java
